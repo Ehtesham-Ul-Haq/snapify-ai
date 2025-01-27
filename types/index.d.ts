@@ -1,4 +1,5 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+ 
 
 // ====== USER PARAMS
 declare type CreateUserParams = {
@@ -25,9 +26,9 @@ declare type CreateUserParams = {
       transformationType: string;
       width: number;
       height: number;
-      config: any;
-      secureURL: string;
-      transformationURL: string;
+      config: object;
+      secureURL: url;
+      transformationURL: url;
       aspectRatio: string | undefined;
       prompt: string | undefined;
       color: string | undefined;
@@ -44,9 +45,9 @@ declare type CreateUserParams = {
       transformationType: string;
       width: number;
       height: number;
-      config: any;
-      secureURL: string;
-      transformationURL: string;
+      config: object;
+      secureURL: url;
+      transformationURL: url;
       aspectRatio: string | undefined;
       prompt: string | undefined;
       color: string | undefined;
